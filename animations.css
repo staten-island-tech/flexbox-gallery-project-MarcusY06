@@ -1,0 +1,209 @@
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+.all {
+  background-color: lightblue;
+}
+.title {
+  font-size: 15em;
+  text-align: center;
+  animation: fadein 2s;
+  font-family: "Acme", sans-serif;
+}
+.parent {
+  font-size: 30em;
+  display: flex;
+  justify-content: space-between;
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    filter: opacity(0%);
+  }
+  to {
+    filter: opacity(100%);
+  }
+}
+.post {
+  box-sizing: border-box;
+  border: 3px solid white;
+  background-color: white;
+  width: 28%;
+  height: 40rem;
+  text-align: center;
+  align-items: center;
+  font-size: 2.5rem;
+  border-radius: 20%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 0.1rem black;
+  margin-top: 5%;
+}
+.text {
+  margin-top: auto;
+}
+.image {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 10%;
+  margin: 0%;
+  transition: 1s;
+}
+.form {
+  text-align: center;
+  transition: 0.3s;
+}
+.button {
+  font-size: 2rem;
+  background-color: white;
+  border-color: white;
+  overflow: hidden;
+  transform: scale(0.7);
+  overflow: hidden;
+  font-family: "Acme", sans-serif;
+}
+.form:hover {
+  transform: scale(1.3);
+}
+.image:hover {
+  transform: scale(1.15);
+}
+.image1:hover {
+  animation: image1 20s infinite;
+}
+@keyframes image1 {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(200%);
+  }
+}
+.image5:hover {
+  filter: invert(1);
+}
+.image2:hover {
+  filter: grayscale(100);
+}
+.post4:hover {
+  filter: opacity(0%);
+  transition: 0.5s;
+}
+.image3:hover {
+  animation: image3 0.5s infinite;
+}
+@keyframes image3 {
+  from {
+    filter: opacity(1);
+  }
+  to {
+    filter: opacity(0.5);
+  }
+  from {
+    filter: opacity(0.5);
+  }
+  to {
+    filter: opacity(0);
+  }
+  from {
+    filter: opacity(0);
+  }
+  to {
+    filter: opacity(0.5);
+  }
+  from {
+    filter: opacity(0.5);
+  }
+  to {
+    filter: opacity(1);
+  }
+}
+.image6:hover {
+  animation: image6 20s infinite;
+}
+@keyframes image6 {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(10%);
+  }
+}
+.image7:hover {
+  filter: saturate(500%);
+}
+.image9 {
+  opacity: 0;
+}
+.image9:hover {
+  animation: image9 2s;
+}
+@keyframes image9 {
+  from {
+    opacity: 0;
+    transform: scale(50%);
+  }
+  to {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+.image8:hover {
+  animation: image8 0.00001s infinite;
+}
+@keyframes image8 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 1920px) {
+  .post {
+    height: 40rem;
+    width: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image {
+    height: 25rem;
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .parent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .post {
+    width: 34%;
+    height: 25rem;
+  }
+  .post3 {
+  }
+  .image {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+@media (max-width: 500px) {
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .post {
+    width: 51%;
+    height: 20rem;
+  }
+}
